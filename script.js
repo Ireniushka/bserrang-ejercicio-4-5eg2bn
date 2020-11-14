@@ -1,12 +1,12 @@
 // En este ejercicio tenéis que sustituir TODAS las funciones tradicionales por funciones flecha y que siga funcionando igual.
 
-changeBackgroundButton => document.getElementById("changeBackgroundButton");
+const changeBackgroundButton = document.getElementById("changeBackgroundButton");
 
 changeBackgroundButton.addEventListener("click", () => 
   changeBackgroundButton.style.backgroundColor = getRandomColor()
 );
 
-let getRandomColor= () =>{
+let getRandomColor = () =>{
   const letters = getLetters();
   let color = '#';
   for (var i = 0; i < 6; i++) {
